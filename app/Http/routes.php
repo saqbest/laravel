@@ -44,3 +44,6 @@ Route::get('auth/logout', 'SignUpController@getLogout');
 Route::get('auth/register', 'SignUpController@getRegister');
 Route::post('auth/register', 'SignUpController@postRegister');
 
+
+
+

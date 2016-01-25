@@ -15,5 +15,10 @@ class SignUpController extends Auth\AuthController{
 		}
 		return redirect($this->redirectPath());
 	}
+	public function test(){
+		echo 111;
+		//Gravatar::get('saqoxachatryan1988@gmail.com');
+
+	}
 
 }

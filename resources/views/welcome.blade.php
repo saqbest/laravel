@@ -38,6 +38,8 @@
     <body>
         <div class="container">
             <div class="content">
+                <img src="<?= Gravatar::get('saqoxachatryan1988@gmail.com'); ?>" alt="" />
+
                 <div class="title">Laravel 5</div>
             </div>
         </div>
