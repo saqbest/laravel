@@ -1,4 +1,4 @@
-<form method="POST" action="/auth/register">
+<form method="POST" action="/auth/register" enctype="multipart/form-data">
     {!! csrf_field() !!}
 
     <div>
@@ -20,6 +20,7 @@
         Confirm Password
         <input type="password" name="password_confirmation">
     </div>
+    <input type="file" name="file" id="file">
 
     <div>
         <button type="submit">Register</button>
