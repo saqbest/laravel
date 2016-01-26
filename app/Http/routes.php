@@ -14,14 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('home',function(){
-    if(Auth::guest()){
-        return Redirect::to('auth/login');
-
-    }
-    else{return 'Welcome  '.Auth::user()->email.'.';}
-
-});
+Route::get('home', 'HomeController@index');
 Route::get('user/{id}',function($id){
    $user=App\User::find($id);
     echo 'User with id of'.$id.'has en email of:'.$user->email;
